@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/microauth/microauth-twitter.svg?branch=master)](https://travis-ci.org/microauth/microauth-twitter)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
-Add [twitter](https://twitter.com) authentication for your [micro](https://github.com/zeit/micro/) service as easy as a flick of your fingers.
+Add [twitter](https://twitter.com) authentication to your [micro](https://github.com/zeit/micro/) service as easy as a flick of your fingers.
 This module is a part of [microauth](https://github.com/microauth/microauth) collection.
 
 ## Installation
