@@ -5,3 +5,5 @@ cache:
   directories:
     - $HOME/.npm
     - node_modules
+before_script:
+  npm install micro
