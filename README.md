@@ -4,6 +4,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 Add twitter authentication for your [micro](https://github.com/zeit/micro/) service as easy as a flick of your fingers.
+This module is a part of [microauth](https://github.com/microauth/microauth) collection.
 
 ## Installation
 
