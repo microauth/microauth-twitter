@@ -53,7 +53,7 @@ const handler = async (req, res, auth) => {
 
   return `Hello ${auth.result.info.screen_name}`;
 
-});
+};
 
 module.exports = twitterAuth(handler);
 ```
