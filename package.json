@@ -1,0 +1,28 @@
+{
+  "name": "microauth-twitter",
+  "version": "0.0.1",
+  "description": "Twitter oauth for micro",
+  "main": "index.js",
+  "scripts": {
+    "example": "micro example.js",
+    "test": "xo"
+  },
+  "files": "index.js",
+  "author": "Dima Paloskin",
+  "license": "MIT",
+  "dependencies": {
+    "micro-redirect": "^1.0.0",
+    "oauth": "^0.9.15"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^1.6.0",
+    "xo": "^0.18.1"
+  },
+  "peerDependencies": {
+    "micro": "^7.3.1"
+  },
+  "xo": {
+    "spaces": 2,
+    "extends": "prettier"
+  }
+}
