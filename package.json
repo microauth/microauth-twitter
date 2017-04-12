@@ -7,6 +7,10 @@
     "example": "micro example.js",
     "test": "xo"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microauth/microauth-twitter"
+  },
   "files": "index.js",
   "author": "Dima Paloskin",
   "license": "MIT",

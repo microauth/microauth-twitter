@@ -1,7 +1,7 @@
 # microauth-twitter
 > Twitter oauth for [micro](https://github.com/zeit/micro/)
 
-[![Build Status](https://travis-ci.org/dimapaloskin/microauth-twitter.svg?branch=master)](https://travis-ci.org/dimapaloskin/microauth-twitter)
+[![Build Status](https://travis-ci.org/microauth/microauth-twitter.svg?branch=master)](https://travis-ci.org/microauth/microauth-twitter))
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 Add [twitter](https://twitter.com) authentication for your [micro](https://github.com/zeit/micro/) service as easy as a flick of your fingers.
@@ -11,7 +11,7 @@ This module is a part of [microauth](https://github.com/microauth/microauth) col
 
 ```sh
 npm install --save microauth-twitter
-# or 
+# or
 yarn add microauth-twitter
 ```
 
