@@ -66,7 +66,7 @@ const microAuthTwitter = ({ consumerKey, consumerSecret, callbackUrl, path = '/a
         const redirectLocation = getRedirectUrl(results.requestToken);
         return redirect(res, 302, redirectLocation);
       } catch (err) {
-        args.push({ err });
+        args.push({ err, provider: 'twitter' });
         return fn(req, res, ...args);
       }
     }
@@ -90,7 +90,7 @@ const microAuthTwitter = ({ consumerKey, consumerSecret, callbackUrl, path = '/a
         args.push({ result });
         return fn(req, res, ...args);
       } catch (err) {
-        args.push({ err });
+        args.push({ err, provider: 'twitter' });
         return fn(req, res, ...args);
       }
     };
