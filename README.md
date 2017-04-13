@@ -1,10 +1,10 @@
 # microauth-twitter
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/microauth/microauth-twitter.svg)](https://greenkeeper.io/)
 > Twitter oauth for [micro](https://github.com/zeit/micro/)
 
 [![Build Status](https://travis-ci.org/microauth/microauth-twitter.svg?branch=master)](https://travis-ci.org/microauth/microauth-twitter)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+[![Greenkeeper badge](https://badges.greenkeeper.io/microauth/microauth-twitter.svg)](https://greenkeeper.io/)
 
 Add [twitter](https://twitter.com) authentication to your [micro](https://github.com/zeit/micro/) service as easy as a flick of your fingers.
 This module is a part of [microauth](https://github.com/microauth/microauth) collection.
