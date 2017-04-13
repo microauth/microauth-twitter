@@ -1,6 +1,6 @@
 {
   "name": "microauth-twitter",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Twitter oauth for micro",
   "main": "index.js",
   "scripts": {
