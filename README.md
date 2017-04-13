@@ -1,4 +1,6 @@
 # microauth-twitter
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/microauth/microauth-twitter.svg)](https://greenkeeper.io/)
 > Twitter oauth for [micro](https://github.com/zeit/micro/)
 
 [![Build Status](https://travis-ci.org/microauth/microauth-twitter.svg?branch=master)](https://travis-ci.org/microauth/microauth-twitter)
