@@ -3,6 +3,8 @@ const url = require('url');
 const oauth = require('oauth');
 const redirect = require('micro-redirect');
 
+const provider = 'twitter';
+
 const getRedirectUrl = (token) => {
   return `https://twitter.com/oauth/authorize?oauth_token=${token}`;
 };
@@ -66,7 +68,7 @@ const microAuthTwitter = ({ consumerKey, consumerSecret, callbackUrl, path = '/a
         const redirectLocation = getRedirectUrl(results.requestToken);
         return redirect(res, 302, redirectLocation);
       } catch (err) {
-        args.push({ err, provider: 'twitter' });
+        args.push({ err, provider });
         return fn(req, res, ...args);
       }
     }
@@ -81,7 +83,7 @@ const microAuthTwitter = ({ consumerKey, consumerSecret, callbackUrl, path = '/a
         const results = await getAccessToken(state.requestToken, state.requestTokenSecret, query.oauth_verifier);
         const data = await verifyCredentials(results.accessToken, results.accessTokenSecret);
         const result = {
-          provider: 'twitter',
+          provider,
           info: JSON.parse(data),
           accessToken: results.accessToken,
           accessTokenSecret: results.accessTokenSecret
@@ -90,7 +92,7 @@ const microAuthTwitter = ({ consumerKey, consumerSecret, callbackUrl, path = '/a
         args.push({ result });
         return fn(req, res, ...args);
       } catch (err) {
-        args.push({ err, provider: 'twitter' });
+        args.push({ err, provider });
         return fn(req, res, ...args);
       }
     };
