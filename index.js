@@ -5,7 +5,7 @@ const redirect = require('micro-redirect');
 
 const provider = 'twitter';
 
-const getRedirectUrl = (token) => {
+const getRedirectUrl = token => {
   return `https://twitter.com/oauth/authorize?oauth_token=${token}`;
 };
 
@@ -59,9 +59,9 @@ const microAuthTwitter = ({ consumerKey, consumerSecret, callbackUrl, path = '/a
 
   return fn => async (req, res, ...args) => {
 
-    const parsedUrl = url.parse(req.url);
+    const { pathname, query } = url.parse(req.url);
 
-    if (parsedUrl.pathname === path) {
+    if (pathname === path) {
       try {
         const results = await getRequestToken();
         states.set(results.requestToken, results);
@@ -74,13 +74,13 @@ const microAuthTwitter = ({ consumerKey, consumerSecret, callbackUrl, path = '/a
     }
 
     const callbackPath = url.parse(callbackUrl).pathname;
-    if (parsedUrl.pathname === callbackPath) {
+    if (pathname === callbackPath) {
       try {
-        const query = querystring.parse(parsedUrl.query);
-        const state = states.get(query.oauth_token);
-        states.delete(query.oauth_token);
+        const queryObject = querystring.parse(query);
+        const state = states.get(queryObject.oauth_token);
+        states.delete(queryObject.oauth_token);
 
-        const results = await getAccessToken(state.requestToken, state.requestTokenSecret, query.oauth_verifier);
+        const results = await getAccessToken(state.requestToken, state.requestTokenSecret, queryObject.oauth_verifier);
         const data = await verifyCredentials(results.accessToken, results.accessTokenSecret);
         const result = {
           provider,
