@@ -1,5 +1,5 @@
 const { send } = require('micro');
-const microAuthTwitter = require('./');
+const microAuthTwitter = require('.');
 
 const options = {
   consumerKey: 'CONSUMER_KEY',

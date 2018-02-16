@@ -1,9 +1,11 @@
 language: node_js
 node_js:
-  - 7
+  - 8
+  - 9
 cache:
   directories:
     - $HOME/.npm
     - node_modules
 before_script:
-  npm install micro
+  - npm install micro
+  - npm install
