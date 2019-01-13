@@ -19,7 +19,7 @@
     "oauth": "^0.9.15"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^2.0.0",
+    "eslint-config-prettier": "^3.4.0",
     "xo": "^0.20.2"
   },
   "peerDependencies": {
