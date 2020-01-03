@@ -15,7 +15,7 @@
   "author": "Dima Paloskin",
   "license": "MIT",
   "dependencies": {
-    "micro-redirect": "^1.0.0",
+    "micro-redirect": "^1.0.1",
     "oauth": "^0.9.15"
   },
   "devDependencies": {
